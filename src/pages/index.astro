@@ -1,0 +1,103 @@
+---
+// src/pages/index.astro
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Niveles from "../pages/niveles.astro";
+import Swiper from "swiper";
+import Testimonios from "./testimonios.astro";
+import Metodologia from "../components/MetodologiaComponent.astro";
+
+
+---
+
+<BaseLayout title="Miss Anali | Inglés divertido para niños y teens">
+	<section class="bg-[#dceeff]  py-16 px-6 md:px-20 rounded-xl">
+
+		<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+			<!-- TEXTO -->
+			<div class="space-y-6">
+				<h1 class="text-4xl md:text-5xl font-extrabold text-blue-900 leading-tight">
+					Aprende inglés <span class="text-orange-500">de forma divertida</span> con Miss Anali
+				</h1>
+				<p class="text-lg text-gray-700">
+					Clases sabatinas con juegos, canciones, dinámicas y tecnología. Niveles para <strong>niños, pre-teens y teens</strong>. ¡Inscripciones abiertas!
+				</p>
+				<a href="#contacto" class="inline-block bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition">
+					Agenda una cita
+				</a>
+			</div>
+
+			<!-- IMAGEN -->
+			<div class="relative">
+				<div class="absolute -inset-2 bg-white/30 blur-2xl rounded-xl z-0"></div>
+				<img
+					src="/7503009.jpg"
+					alt="English School"
+					class="relative z-10 rounded-xl shadow-lg"
+				/>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="py-16 px-6 md:px-20 bg-white">
+		<div class="max-w-4xl mx-auto text-center space-y-8">
+			<h2 class="text-3xl md:text-4xl font-bold text-blue-900">¿Por qué elegir a Miss Anali?</h2>
+			<div class="grid md:grid-cols-3 gap-8 text-left">
+				<div class="text-center">
+					<div class="text-orange-500 text-4xl  mb-3"><i class="fas fa-puzzle-piece"></i></div>
+					<h3 class="text-xl font-semibold text-orange-500">Aprendizaje con juegos</h3>
+					<p class="text-gray-700">Actividades lúdicas para que los niños disfruten aprender.</p>
+				</div>
+				<div class="text-center">
+					<div class="text-orange-500 text-4xl mb-3"><i class="fas fa-laptop-code"></i></div>
+					<h3 class="text-xl font-semibold text-orange-500">Enseñanza moderna</h3>
+					<p class="text-gray-700">Uso de tecnología, canciones y retos interactivos.</p>
+				</div>
+				<div class="text-center">
+					<div class="text-orange-500 text-4xl mb-3"><i class="fas fa-award"></i></div>
+					<h3 class="text-xl font-semibold text-orange-500">Seguimiento y progreso</h3>
+					<p class="text-gray-700">Evaluaciones constantes y feedback para padres.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<Niveles />
+	<Metodologia />
+
+	<Testimonios />
+
+
+
+	<section id="contacto" class="bg-orange-500 text-white py-16 px-6 text-center">
+		<h2 class="text-3xl font-bold mb-4">¿Quieres más información?</h2>
+		<p class="text-lg mb-8 max-w-xl mx-auto">
+			Agenda una cita con Miss Anali. ¡Aprender inglés nunca fue tan divertido!
+		</p>
+
+		<a href="https://wa.me/51936570178" target="_blank"
+		   class="inline-flex items-center gap-3 bg-white text-orange-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-orange-100 transition">
+			<i class="fab fa-whatsapp text-2xl"></i> Escribir por WhatsApp
+		</a>
+
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script>
+		import Swiper from "swiper";
+
+		document.addEventListener('DOMContentLoaded', function () {
+			new Swiper('.testimonial-swiper', {
+				loop: true,
+				autoplay: {
+					delay: 1000,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+			});
+		});
+	</script>
+
+</BaseLayout>
