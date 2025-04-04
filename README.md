@@ -1,48 +1,55 @@
-# Astro Starter Kit: Basics
+# 🌟 Miss English - Página Web
 
-```sh
-npm create astro@latest -- --template basics
-```
+Sitio web informativo para **Miss Anali**, profesora de inglés con un enfoque divertido y educativo para niños, pre-teens y adolescentes. La página presenta información clara, moderna y amigable para su público, con secciones animadas y optimizadas para cualquier dispositivo.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🛠️ Tecnologías utilizadas
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- **[Astro](https://astro.build/)** – Framework rápido y moderno para sitios estáticos.
+- **[Tailwind CSS](https://tailwindcss.com/)** – Framework de utilidades CSS para estilos modernos y responsivos.
+- **[Swiper.js](https://swiperjs.com/)** – Biblioteca de carrusel utilizada para los testimonios.
+- **[Font Awesome](https://fontawesome.com/)** – Íconos de redes sociales (WhatsApp, Instagram, Facebook).
+- **[Vercel](https://vercel.com/)** – Hosting en la nube para despliegue rápido y gratuito.
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## ✨ Funcionalidades
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- 🎨 Hero con llamada a la acción y diseño profesional
+- 📱 Totalmente responsivo (móvil, tablet, escritorio)
+- 🧩 Secciones reutilizables con componentes de Astro
+- 💬 Testimonios con carrusel Swiper
+- 📱 Botón flotante de WhatsApp
+- 🌐 Redes sociales enlazadas
+- ⚡ Rápido y optimizado para SEO
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
-## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+## 📄 Dependencias
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Este proyecto utiliza las siguientes librerías y herramientas:
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```json
+{
+  "name": "astro-english-fun",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.6.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "swiper": "^11.2.6"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "tailwindcss": "^3.4.17"
+  }
+}
