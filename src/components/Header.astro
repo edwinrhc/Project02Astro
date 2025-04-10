@@ -1,11 +1,10 @@
-
-<header class="border-b bg-white shadow-sm" x-data="{ open: false }">
+<header class="sticky top-0 z-50 border-b bg-white/80 backdrop-blur" x-data="{ open: false }">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <!-- Logo -->
-        <a href="/" class="text-xl font-bold text-blue-900 hover:text-blue-600">English for Kids</a>
+        <a href="/" class="text-2xl font-extrabold tracking-tight text-blue-700 hover:text-pink-600">
+            <span class="text-yellow-400">English</span> for <span class="text-green-500">Kids</span>
+        </a>
 
-        <!-- Botón Hamburguesa (visible solo en móviles) -->
-        <button @click="open = !open" class="md:hidden text-blue-900 focus:outline-none">
+        <button @click="open = !open" class="md:hidden text-blue-900 hover:text-pink-500 transition-transform duration-200 focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                  viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -13,18 +12,17 @@
             </svg>
         </button>
 
-        <!-- Navegación (desktop) -->
-        <nav class="hidden md:flex space-x-6 text-sm font-medium">
-            <a href="/" class="text-gray-700 hover:text-blue-600">Inicio</a>
-            <a href="/metodologia" class="text-gray-700 hover:text-blue-600">Metodología</a>
-            <a href="/contacto" class="text-gray-700 hover:text-blue-600">Contacto</a>
+        <nav class="hidden md:flex space-x-6 text-sm font-semibold">
+            <a href="/" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Inicio</a>
+            <a href="/metodologia" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Metodología</a>
+            <a href="/contacto" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Contacto</a>
         </nav>
     </div>
 
-    <!-- Menú móvil desplegable -->
     <div x-show="open" class="md:hidden px-6 pb-4 space-y-2" x-transition>
-        <a href="/" class="block text-gray-700 hover:text-blue-600">Inicio</a>
-        <a href="/metodologia" class="block text-gray-700 hover:text-blue-600">Metodología</a>
-        <a href="/contacto" class="block text-gray-700 hover:text-blue-600">Contacto</a>
+        <a href="/" class="block text-gray-700 hover:text-blue-600 transition-colors duration-300">Inicio</a>
+        <a href="/metodologia" class="block text-gray-700 hover:text-blue-600 transition-colors duration-300">Metodología</a>
+        <a href="/contacto" class="block text-gray-700 hover:text-blue-600 transition-colors duration-300">Contacto</a>
     </div>
 </header>
+
